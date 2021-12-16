@@ -1,0 +1,35 @@
+<div class="wrapper" [perfectScrollbar]="config">
+    <div class=" d-flex flex-wrap">
+        <div class="col-12">
+           <strong>Conoce un poco sobre mis proyectos en Git Hub</strong> 
+        </div>
+        <div class="block-repos animate__animated animate__fadeInUp animation-{{i*2}}
+    col-12 col-sm-12 col-md-12 col-lg-4" *ngFor="let item of repos;let i =index">
+
+            <div class="block-repos-in d-flex ">
+
+                <div class="left d-flex">
+
+                    <div class="top">
+                        <div class="title"><strong>{{item.name}}</strong></div>
+                        <div class="description">
+                            {{item.description}}
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="tag">
+                            <span>{{item.language}}</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.wrapper{
+    height: calc(100vh - 4rem);
+    position: relative;
+    display: block;
+    overflow-y: auto;
+
+.block-repos{
+    height: 15rem;
+    padding: .5rem;
+    display: block;
+
+    .block-repos-in{
+        background-color: #cacaca2e;
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+        transition: all ease 150ms;
+            .left{
+            width: 80%;
+            }
+            .right{
+            width: 20%;
+             }
+
+        }
+
+        .description {
+            padding: .5rem 0;
+            color: black;
+            opacity: .6;
+            font-size: .9rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .left {
+            width: 80%;
+            flex-direction: column;
+            justify-content: space-between;
+      
+            .title {
+              font-size: 1.4rem;
+            }
+        }
+    }
+}
