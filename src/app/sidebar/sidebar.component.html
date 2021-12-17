@@ -1,22 +1,15 @@
- <div class="wrapper">
+<div class="wrapper">
     <div class="pretitle animate__animated animate__fadeInUp animation-1">Hola Bienvenido mi nombre es</div>
     <h1 #asTitle class="title animate__animated animate__fadeInUp animation-3"></h1>
     <h2 class="sub-title  animate__animated animate__fadeInUp animation-3">Soy Desarrollador Web</h2>
     <p class="description animate__animated animate__fadeInUp animation-5">
-        Apasionado por el desarrollo con actitudes fontend y de diseño, 
+        Apasionado por el desarrollo con actitudes fontend y de diseño,
         amante de los retos y de contribuir positivamente con mi conocimiento
     </p>
-  <div class="link-wrapper">
-    <hr>
-    <div class="links d-flex flex-wrap animate__animated animate__fadeInUp ">
-        <div class="block col-12 col-lg-4" *ngFor="let linkobjeto of links">
-            <a [href]="linkobjeto.link">
-            <div class="block-in">
-                <span [innerHTML]="linkobjeto.icon"></span>
-            </div>
-        </a>
+
+    <div class="container d-grid gap-2 col-6 mx-auto">
+        <div class="links  animate__animated animate__fadeInUp ">
+                <button (click)="download()" class="boton col-12 mx-auto ">Curriculum</button>
         </div>
-    </div>  
-</div>  
-
-
+    </div>
+</div>

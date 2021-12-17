@@ -10,21 +10,6 @@ import  Typewriter from 't-writer.js';
 export class SidebarComponent implements OnInit, AfterViewInit {
 
   @ViewChild('asTitle') asTitle: ElementRef;
-  // array para los icono
-  links:Array<LinkModel>=[
-    {
-      link:'https://www.linkedin.com/in/oscar-eduardo-castro-5068a6178/',
-      icon:'<i class="uil uil-linkedin"></i>'
-    },
-    {
-      link:'https://github.com/oscarerc',
-      icon:'<i class="uil uil-github"></i>'
-    },
-    {
-      link:'oscareduardorodriguezcastro3@gmail.com',
-      icon:'<i class="uil uil-envelope"></i>'
-    }
-  ];
 
   constructor() { }
 
@@ -51,6 +36,10 @@ export class SidebarComponent implements OnInit, AfterViewInit {
       // .rest(2000)
       .start();
   };
+
+  download(){
+    
+  }
 }
 
 
