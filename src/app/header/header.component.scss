@@ -8,6 +8,20 @@
     // background:linear-gradient(to bottom,black,white);
     // box-shadow:m 100px 100px 80px rgba(0, 0, 0, 0.44);
 }
+.section1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+.name{
+  padding-top: .6rem;
+  padding-right: .6rem;
+  font-size: 2rem;
+}
+}
+
+
+
 .section2{
 
     .links{

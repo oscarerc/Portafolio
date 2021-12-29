@@ -7,9 +7,16 @@ export class DownloadService {
 
   constructor() { }
 
-static downloadFile(){
+// cuando son estaticas no es necesario instanciar el servicio donde se va a usar;
+static downloadFile(path: string, filename:string){
   const downloadInstance = document.createElement('a');
-  downloadInstance.href = ''
+  downloadInstance.href = path;;
+  downloadInstance.target ='_blank';
+  downloadInstance.download=filename;;
+
+  document.body.appendChild(downloadInstance);
+  downloadInstance.click();
+  document.body.removeChild(downloadInstance);
 }
 
 
